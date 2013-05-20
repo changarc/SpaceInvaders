@@ -1,0 +1,4 @@
+SpaceInvaders
+=============
+
+This project consists of a space invaders game for player or age 7+. It will be available online as a free game. The game has a main menu screen with the logo of space invaders. A start button will lead the player to the game and a quit button will end the game. Once the player inputs his name, the game is started. His name, health score and shots will be displayed at the top of the screen in every level and in the game over/ congratulations screens. The Spaceship is controlled by the player while a number of aliens are the enemies. The player has to get rid of all the aliens in order to go to the next level. If the player gets hit 100 times his health will decrease to 0 and the game would end. A button will redirect the player to the main menu where he could start over the game. On the other hand if the player shoots all the aliens from level 1-3, a congratulations screen will appear which also redirects the player to the main screen. 
