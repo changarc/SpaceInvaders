@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{84265DE2-6941-B6BB-D387-7D462C6D9135}</ProjectGuid>
+	<ProjectGuid>{1A4436B8-6488-E830-94F5-3196BA2E629C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -50,6 +50,9 @@
      <Compile Include="Assets\LaserController.js" />
      <Compile Include="Assets\PlayerController.js" />
      <Compile Include="Assets\SwarmController.js" />
+     <Compile Include="Assets\congratulations.js" />
+     <Compile Include="Assets\gameOver.js" />
+     <Compile Include="Assets\menu.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
