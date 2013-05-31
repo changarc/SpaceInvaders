@@ -11,12 +11,12 @@ function Update () {
 	if(shootingup)
 	{
 		//shoot up
-		transform.Translate(Vector3.up * 30 * Time.deltaTime);
+		transform.Translate(Vector3.up * 10 * Time.deltaTime);
 	}
 	else
 	{
 		//shoot down
-		transform.Translate(Vector3.up * -15 * Time.deltaTime);
+		transform.Translate(Vector3.up * -10 * Time.deltaTime);
 	}
 
 
@@ -34,7 +34,6 @@ function OnTriggerEnter(other:Collider)
 		//laser hits an alien
 		//increment score
 			PlayerController.score++;
-			GameController.shotsHit++;
 			
 			var PlayerControllerScript:PlayerController;
 			
@@ -48,17 +47,12 @@ function OnTriggerEnter(other:Collider)
 		//destroy the laser
 			Destroy(this.gameObject);
 		}
-		else if (other.gameObject.tag == "miss")
-		{
-		
-			GameController.total++;
-		}
 	}
+
 }
 
 function OnBecameInvisible()
 {
 	Destroy(this.gameObject);
-	
 	
 }

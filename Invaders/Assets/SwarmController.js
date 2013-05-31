@@ -14,7 +14,7 @@ var alien:Rigidbody;
 //we need to move down in 11 steps.  We will wait 5 seconds before we move down.
 
 //a coroutine that is run in sequence in conjunction with the update function
-	function moveDown()
+function moveDown()
 {
 	//move down by one step
 	transform.position.y--;
@@ -46,10 +46,10 @@ function Start () {
 	//create one row with five aliens
 	createAliens(GameController.rows,GameController.cols);
 	
-	for(var counter=0;counter<6;counter++)
+	for(var counter=0;counter<5;counter++)
 	{
 		//wait for five seconds
-		yield WaitForSeconds(6);
+		yield WaitForSeconds(5);
 		//move the aliens down
 		moveDown();
 	}
